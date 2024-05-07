@@ -1,0 +1,483 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-y: auto;
+    flex-direction: column;
+}
+
+.containerr {
+    display: flex;
+    flex-direction: column;
+    min-height: 101vh;
+    background-image: url('images/d.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    background-color: rgba(245, 98, 28, 0.7);
+    text-align: center;
+    padding: 20px;
+    color: #ffffff;
+    margin-top: auto;
+}
+.foot {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(245, 98, 28, 0.7);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.no-background {
+    background-image: none !important;
+    background-color: #d9d2cc;
+    display: block;
+
+}
+
+.allitems{
+    padding: 100px 30px;
+}
+.no-backgroundadd {
+    background-image: none !important;
+    background-color: #d9d2cc;
+    display: grid;
+    padding: 100px 30px;
+    overflow-y: auto;
+    min-height: 100vh;
+}
+
+.no-backgroundaddtype {
+    background-image: none !important;
+    background-color: #d9d2cc;
+    display: block;
+}
+
+.formitems{
+    padding: 150px 30px;
+}
+
+.no-backgroundwarning {
+    background-image: none !important;
+    background-color: #d9d2cc;
+    display: grid;
+}
+
+.background-image {
+    background-image: url('images/g2.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    justify-content: center; /* Центрируем содержимое по вертикали */
+    align-items: center;
+}
+
+.background-image-log {
+    background-image: url('images/log.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    justify-content: center; /* Центрируем содержимое по вертикали */
+    align-items: center;
+}
+
+.background-image-regadmin{
+    background-image: url('images/rg.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    justify-content: center; /* Центрируем содержимое по вертикали */
+    align-items: center;
+}
+
+.welcome {
+    text-align: center;
+    color: #d9d2cc;
+    padding: 15px;
+}
+.welcome-login {
+    text-align: center;
+}
+.header-vertical {
+    width: auto;
+    background-color: rgba(245, 98, 28, 0.7);
+    padding: 40px 60px;
+    padding-left: 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    justify-content: space-between;
+    top: 0;
+    left: -200px;
+    bottom: 0;
+    overflow-y: auto;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    z-index: 1000;
+    transition: width 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+.header-vertical:hover {
+    left: 0;
+}
+.header-arrow {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 40px;
+    padding-left: 10px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    z-index: 1001;
+    cursor: pointer;
+}
+
+.arrow {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid white;
+}
+
+
+.header {
+    width: 100%;
+    padding: 30px 60px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.main-buttons-vertical{
+    margin-bottom: 180px;
+    margin-left: 10px;
+}
+.main-buttons-vertical a {
+    font-weight: bolder;
+    font-size: 18px;
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.85);
+    text-decoration: none;
+    transition: color 0.3s ease, border-color 0.3s ease;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.main-buttons-vertical a:hover {
+    color: rgb(123, 58, 27);
+}
+
+.home-link {
+    font-size: 20px;
+    font-weight: bolder;
+    color: rgba(255, 255, 255, 0.85);
+    text-decoration: none;
+    margin-left: 10px;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+.home-link-forms {
+
+}
+.home-link:hover {
+    color: rgb(123, 58, 27);
+}
+.login-button {
+    padding: 10px 20px;
+    color: #d9d2cc;
+    text-decoration: none;
+    background-color: rgba(8, 8, 7, 0.77);
+    border-radius: 50px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+.login-button:hover {
+    color: #d9d2cc;
+    background-color: rgba(8, 8, 7, 0.85);
+    border: none;
+}
+.exit {
+    font-weight: bolder;
+    margin-left: 20px;
+    font-size: 16px;
+    padding: 10px 30px;
+    color: rgba(255, 255, 255, 0.84);
+    text-decoration: none;
+    border-radius: 50px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    background-color: rgba(8, 8, 7, 0.71);
+}
+.exit:hover {
+    color: rgb(217, 210, 204);
+    background-color: rgba(8, 8, 7, 0.89);
+}
+
+.deal-table {
+    width: calc(100% - 40px);
+    border-collapse: collapse;
+}
+
+.deal-table th, .deal-table td {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 8px;
+    text-align: center;
+}
+
+.deal-table th {
+    background-color: rgb(220, 109, 56);
+    font-weight: bold;
+}
+
+
+/* Стили для кнопок действий */
+.action-button {
+    display: inline-block;
+    font-weight: bolder;
+    padding: 6px 12px;
+    text-decoration: none;
+    color: #b55431;
+    transition: background-color 0.3s ease;
+}
+
+.action-button:hover {
+    color: #632e1b;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+    background-color: rgb(220, 109, 56);
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: rgb(123, 58, 27);
+}
+
+.button-submit{
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+    border: none;
+    background-color: rgb(220, 109, 56);
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+.error-message {
+    position: fixed;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: none;
+}
+
+.error-message::before {
+    content: "⚠";
+    margin-right: 10px;
+}
+
+.error-message.active {
+    display: block;
+    animation: fadeInDown 0.5s ease;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.form-container {
+    background-color: rgba(223, 216, 208, 0.5);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    margin: auto;
+}
+
+.form-container-reg {
+    background-color: rgba(223, 216, 208, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 450px;
+    margin: 10px auto;
+    overflow: hidden
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 10px;
+    margin-bottom: 20px;
+}
+
+.label-input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2px;
+}
+
+.label-input label {
+    font-weight: bold;
+}
+
+.styled-input-text input,
+.select-box {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.styled-input-text input:focus,
+.select-box:focus {
+    border-color: #b55431;
+    outline: none;
+}
+
+.select-box {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%23b55431" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/><path fill="none" d="M0 0h24v24H0z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    padding-right: 30px;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+.button-container-form {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.button-submit:hover {
+    background-color: rgb(123, 58, 27);
+}
+
+.validationError {
+    color: red;
+    font-size: 12px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.container {
+    text-align: center;
+}
+
+.access-denied-content {
+    margin-bottom: 20px;
+    padding-top: 300px;
+}
+
+.main-button {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+    background-color: rgb(220, 109, 56);
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+.main-button:hover {
+    background-color: rgb(123, 58, 27);
+}
+
+/* Стили для модального окна */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 40%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+
+.modal-content p {
+    margin: 0;
+}
+
+.modal-content button {
+    margin-top: 10px;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.modal-content #confirmNo {
+    margin-right: 10px;
+}
+
+.modal-content #confirmYes {
+    margin-left: 10px;
+}
+
